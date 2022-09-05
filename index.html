@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,389 +18,458 @@
 </head>
 
 <body>
-<header>
-
-    <div class="left_part">
-        <h1 class="text">My Cloud</h1>
-        <h2 class="welcome_text"> Welcome, James Alto! 👋</h2>
-    </div>
-    <div class="search_block">
-        <i class="fa fa-search"></i>
-        <input type="text" class="search_term" placeholder="Search anything here">
-
-        <div class="bell">
-            <i class='fa fa-bell fa-1x'></i>
-        </div>
-
-        <div class="conf">
-            <i class="fa fa-cog fa-1x"></i>
-        </div>
-
-        <div>
-            <img class="avatar" src="users_photos/img_avatar.png" alt="avatar">
-        </div>
-    </div>
-</header>
-
-<main>
-    <!--All Files-->
-    <div class="all_files">
-        <div class="left">
-            <h1 class="description">All files</h1>
-        </div>
-        <div class="right">
-            <button class="add" type="button">+Add new</button>
-        </div>
-    </div>
-
-    <!-- Aside-->
-    <div class="left_aside">
+<div style="width: 100%; display: flex">
+    <!--    Aside-->
+    <div class="left-aside" >
         <div class="logo">
             <img src="logo.png" alt="logo">
         </div>
         <div class="home">
             <img class="arrow" src="arrow.png" alt="">
-            <p class="home_text"><i class="fa-solid fa-house"></i> Home</p>
+            <p class="home-text"><i class="fa-solid fa-house"></i> Home</p>
         </div>
-        <div class="my_files">
-            <p class="files"><i class="fa fa-folder-minus"></i> My Files</p>
+        <div class="my-files">
+            <p class="files"><img class="files-with-minus" src="icons/files-with-minus.svg" alt="">My Files</p>
         </div>
         <div class="starred">
             <p class="star"><i class="fa fa-star"></i> Starred</p>
         </div>
         <div class="request">
-            <p class="file"><i class="fa fa-folder"></i> Files Requests</p>
+            <p class="file"><img class="folder-with-question" src="icons/folder-with-question.svg" alt="">Files Requests</p>
         </div>
         <div class="shared">
-            <p class="share"><i class="fa fa-share-alt"></i>Shared</p>
+            <p class="share"><img class="shared-icon" src="icons/shared.svg" alt="">Shared</p>
         </div>
         <div class="deleted">
-            <p class="delete"><i class='fas fa-trash-alt'></i>Deleted</p>
+            <p class="delete"><img class="deleted-icon" src="icons/deleted.svg" alt="">Deleted</p>
         </div>
-        <div class="aside_footer">
+        <div class="aside-footer">
+            <div class="content">
             <img class="message" src="message.png" alt="message">
             <p class="percent">75% In-use</p>
             <progress class="progress" max="100" value="75"></progress>
-            <p class="use_memory">600GB</p>
-            <p class="free_memory">800GB</p>
+            <p class="use-memory">600GB</p>
+            <p class="free-memory">800GB</p>
             <button class="upgrade" type="button">Upgrade</button>
-        </div>
-    </div>
-
-    <!--    First 3 cards  -->
-
-    <div class="cards_first_row">
-        <div class="card_first">
-            <div class="card_first_header">
-                <div class="card_file_minus">
-                    <i class="fa fa-border fa-folder-minus"></i>
-                </div>
-                <div>
-                    <h3 class="first_card_text">Documents</h3>
-                    <p class="date"> Sep 25, 2022, 13:25 PM</p>
-                </div>
-                <div class="points">
-                    <i class="fa fa-ellipsis-v"></i>
-                </div>
-            </div>
-            <div class="users">
-                <p class="sharing">Shared users</p>
-                <div>
-                    <p class="inside"> Inside Files</p>
-                </div>
-            </div>
-            <div class="card_footer">
-                <img class="photo" src="users_photos/Rectangle%201997.png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201998.png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201999.png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%202000.png" alt="User">
-                <div class="number">
-                    <p class="count">+80</p>
-                </div>
-                <div class="all_users">
-                    <p class="all_users_count">3,985</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card_second">
-            <div class="card_first_header">
-                <div class="card_file_minus">
-                    <i class="fa fa-border fa-folder-minus"></i>
-                </div>
-                <div>
-                    <h3 class="first_card_text">Music</h3>
-                    <p class="date"> Sep 25, 2022, 13:25 PM</p>
-                </div>
-                <div class="points">
-                    <i class="fa fa-ellipsis-v"></i>
-                </div>
-            </div>
-            <div class="users">
-                <p class="sharing">Shared users</p>
-                <div>
-                    <p class="inside"> Inside Files</p>
-                </div>
-            </div>
-            <div class="card_footer">
-                <img class="photo" src="users_photos/Rectangle%201997%20(1).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201998%20(2).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201999%20(3).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%202000(4).png" alt="User">
-                <div class="number">
-                    <p class="count">+5</p>
-                </div>
-                <div class="all_users">
-                    <p class="all_users_count">499</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card_third">
-            <div class="card_first_header">
-                <div class="card_file_minus">
-                    <i class="fa fa-border fa-folder-minus"></i>
-                </div>
-                <div>
-                    <h3 class="first_card_text">ProjectK</h3>
-                    <p class="date"> Sep 25, 2022, 13:25 PM</p>
-                </div>
-                <div class="points">
-                    <i class="fa fa-ellipsis-v"></i>
-                </div>
-            </div>
-            <div class="users">
-                <p class="sharing">Shared users</p>
-                <div>
-                    <p class="inside"> Inside Files</p>
-                </div>
-            </div>
-            <div class="card_footer">
-                <img class="photo" src="users_photos/Rectangle%201997%20(2).png" alt="">
-                <img class="photo" src="users_photos/Rectangle%201998%20(3).png" alt="">
-                <img class="photo" src="users_photos/Rectangle%201999%20(1).png" alt="">
-                <div class="all_users">
-                    <p class="all_users_count_third">256</p>
-                </div>
             </div>
         </div>
     </div>
 
-    <!--Second 3 cards-->
+    <main>
+        <header>
+            <div class="left-part">
+                <h1 class="text">My Cloud</h1>
+                <h2 class="welcome-text"> Welcome, James Alto! 👋</h2>
+            </div>
+            <div class="search-block">
+                <i class="fa fa-search"></i>
+                <input type="text" class="search-term"  placeholder="Search anything here">
 
-    <div class="cards_second_row">
-        <div class="card_four">
-            <div class="card_first_header">
-                <div class="card_file_minus">
-                    <i class="fa fa-border fa-folder-minus"></i>
+                <div class="bell">
+                    <img class="bell-icon" src="icons/bell.svg" alt="">
                 </div>
+
+                <div class="conf">
+                    <i class="fa fa-cog fa-1x"></i>
+                </div>
+
                 <div>
-                    <h3 class="first_card_text">Rico Media</h3>
-                    <p class="date"> Sep 25, 2022, 13:25 PM</p>
-                </div>
-                <div class="points">
-                    <i class="fa fa-ellipsis-v"></i>
+                    <img class="avatar" src="users-photos/img-avatar.png" alt="avatar">
                 </div>
             </div>
-            <div class="users">
-                <p class="sharing">Shared users</p>
-                <div>
-                    <p class="inside"> Inside Files</p>
-                </div>
+        </header>
+
+        <!--All Files-->
+        <div class="all-files">
+            <div class="left">
+                <h1 class="description">All files</h1>
             </div>
-            <div class="card_footer">
-                <img class="photo" src="users_photos/Rectangle%201993%20(4).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201993%20(3).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201993.png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201993.png" alt="User">
-                <div class="number">
-                    <p class="count">+52</p>
-                </div>
-                <div class="all_users">
-                    <p class="all_users_count">1,225</p>
-                </div>
+            <div class="right">
+                <button class="add" type="button">+Add new</button>
             </div>
         </div>
 
-        <div class="card_five">
-            <div class="card_first_header">
-                <div class="card_file_minus">
-                    <i class="fa fa-border fa-folder-minus"></i>
+        <!--    First 3 cards-->
+
+        <div class="cards-first-row">
+            <div class="card-first">
+                <div class="card-first-header">
+                    <div class="first-card-header-content">
+                    <div class="card-file-minus">
+                        <i class="fa fa-border fa-folder-minus"></i>
+                    </div>
+                    <div class="card-texts">
+                        <h3 class="first-card-text">Documents</h3>
+                        <p class="date"> Sep 25, 2022, 13:25 PM</p>
+                    </div>
+                    </div>
+                    <div class="points">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="first_card_text">New Dev</h3>
-                    <p class="date"> Sep 25, 2022, 13:25 PM</p>
-                </div>
-                <div class="points">
-                    <i class="fa fa-ellipsis-v"></i>
+
+                <div class="all-content">
+                    <div class="shared-photos">
+                        <p class="sharing">Shared users</p>
+                        <div class="all-photos">
+                            <img class="photo" src="users-photos/Rectangle%201997.png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201998.png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201999.png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%202000.png" alt="User">
+                            <div class="number">
+                                <p class="count">+80</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inside-count">
+                        <p class="inside"> Inside Files</p>
+                        <div class="all-users">
+                            <p class="all-users-count-third">3.985</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="users">
-                <p class="sharing">Shared users</p>
-                <div>
-                    <p class="inside"> Inside Files</p>
+
+            <div class="card-second">
+                <div class="card-first-header">
+                    <div class="first-card-header-content">
+                        <div class="card-file-minus">
+                            <i class="fa fa-border fa-folder-minus"></i>
+                        </div>
+                        <div class="card-texts">
+                            <h3 class="first-card-text">Music</h3>
+                            <p class="date"> Sep 25, 2022, 13:25 PM</p>
+                        </div>
+                    </div>
+                    <div class="points">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="all-content">
+                    <div class="shared-photos">
+                        <p class="sharing">Shared users</p>
+                        <div class="all-photos">
+                            <img class="photo" src="users-photos/Rectangle%201997%20(1).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201998%20(2).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201999%20(3).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%202000(4).png" alt="User">
+                            <div class="number">
+                                <p class="count">+5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inside-count">
+                        <p class="inside"> Inside Files</p>
+                        <div class="all-users">
+                            <p class="all-users-count-third">499</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card_footer">
-                <img class="photo" src="users_photos/Rectangle%201995%20(1).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201995%20(2).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201995%20(3).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201995(4).png" alt="User">
-                <div class="number">
-                    <p class="count">+22</p>
+
+            <div class="card-third">
+                <div class="card-first-header">
+                    <div class="first-card-header-content">
+                        <div class="card-file-minus">
+                            <i class="fa fa-border fa-folder-minus"></i>
+                        </div>
+                        <div class="card-texts">
+                            <h3 class="first-card-text">ProjectK</h3>
+                            <p class="date"> Sep 25, 2022, 13:25 PM</p>
+                        </div>
+                    </div>
+                    <div class="points">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </div>
                 </div>
-                <div class="all_users">
-                    <p class="all_users_count">2,265</p>
+                <div class="all-content">
+                    <div class="shared-photos">
+                        <p class="sharing">Shared users</p>
+                        <div class="all-photos">
+                            <img class="photo" src="users-photos/Rectangle%201997%20(2).png" alt="">
+                            <img class="photo" src="users-photos/Rectangle%201998%20(3).png" alt="">
+                            <img class="photo" src="users-photos/Rectangle%201999%20(1).png" alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="inside-count">
+                        <p class="inside"> Inside Files</p>
+                        <div class="all-users">
+                            <p class="all-users-count-third">256</p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
 
-        <div class="card_six">
-            <div class="card_first_header">
-                <div class="card_file_minus">
-                    <i class="fa fa-border fa-folder-minus"></i>
-                </div>
-                <div>
-                    <h3 class="first_card_text">Files 2022</h3>
-                    <p class="date"> Sep 25, 2022, 13:25 PM</p>
-                </div>
-                <div class="points">
-                    <i class="fa fa-ellipsis-v"></i>
-                </div>
-            </div>
-            <div class="users">
-                <p class="sharing">Shared users</p>
-                <div>
-                    <p class="inside"> Inside Files</p>
-                </div>
-            </div>
-            <div class="card_footer">
-                <img class="photo" src="users_photos/Rectangle%201996%20(1).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201996%20(2).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201996%20(3).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201996(4).png" alt="User">
-                <div class="number">
-                    <p class="count">+12</p>
-                </div>
-                <div class="all_users">
-                    <p class="all_users_count">597</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--        Second 3 cards-->
 
-    <!--    Recent files-->
+        <div class="cards-second-row">
+            <div class="card-four">
+                <div class="card-first-header">
+                    <div class="first-card-header-content">
+                        <div class="card-file-minus">
+                            <i class="fa fa-border fa-folder-minus"></i>
+                        </div>
+                        <div class="card-texts">
+                            <h3 class="first-card-text">Rico Media</h3>
+                            <p class="date"> Sep 25, 2022, 13:25 PM</p>
+                        </div>
+                    </div>
+                    <div class="points">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </div>
+                </div>
 
-    <div class="recent_file">
-        <h2>Recent Files</h2>
-    </div>
-</main>
+                <div class="all-content">
+                    <div class="shared-photos">
+                        <p class="sharing">Shared users</p>
+                        <div class="all-photos">
+                            <img class="photo" src="users-photos/Rectangle%201993%20(4).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201993%20(3).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201993.png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201993.png" alt="User">
+                            <div class="number">
+                                <p class="count">+52</p>
+                            </div>
+                        </div>
+                    </div>
 
-<!--Page Footer-->
-<footer class="page_footer">
-    <div class="table_headers">
-        <div class="first_column">
-            <p class="first_column_text">Name<i class="fa-solid fa-sort"></i></p>
-        </div>
-        <div class="second_column">
-            <p class="second_column_text">Shared Users<i class="fa-solid fa-sort"></i></p>
-        </div>
-        <div class="third_column">
-            <p class="column_text">File Size<i class="fa-solid fa-sort"></i></p>
-        </div>
-        <div class="four_column">
-            <p class="column_text">Last Modified<i class="fa-solid fa-sort"></i></p>
-        </div>
-    </div>
-    <hr>
-    <div class="first_row">
-        <div class="first_part">
-            <div class="first_row_card">
-                <i class='fa fa-image orange-color'></i>
-            </div>
-            <div>
-                <p class="first_row_text">Website Design.png</p>
-            </div>
-        </div>
-        <div class="second_part">
-            <div class="card_footer">
-                <img class="photo" src="users_photos/Rectangle%201997.png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201998.png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%201999.png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%202000.png" alt="User">
-                <div class="number">
-                    <p class="count">+12</p>
+                    <div class="inside-count">
+                        <p class="inside"> Inside Files</p>
+                        <div class="all-users">
+                            <p class="all-users-count-third">1,225</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="size">
-            <p class="mb">2.8 MB</p>
-        </div>
-        <div class="modified">
-            <p class="modified_date">Dec 13, 2022</p>
-        </div>
-        <div class="three_points">
-            <p class="points_icon"><i class="fa fa-ellipsis-v"></i></p>
-        </div>
-    </div>
 
-    <div class="second_row">
-        <div class="first_part">
-            <div class="second_row_card">
-                <i class='fa fa-border fa-folder-minus'></i>
-            </div>
-            <div>
-                <p class="first_row_text">UX-UI.zip</p>
-            </div>
-        </div>
-        <div class="second_part">
-            <div class="card_footer">
-                <img class="photo" src="users_photos/Rectangle%202011(1).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%202011(2).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%202011(3).png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%202011(4).png" alt="User">
-                <div class="number">
-                    <p class="count">+5</p>
+            <div class="card-five">
+                <div class="card-first-header">
+                    <div class="first-card-header-content">
+                        <div class="card-file-minus">
+                            <i class="fa fa-border fa-folder-minus"></i>
+                        </div>
+                        <div class="card-texts">
+                            <h3 class="first-card-text">New Dev</h3>
+                            <p class="date"> Sep 25, 2022, 13:25 PM</p>
+                        </div>
+                    </div>
+                    <div class="points">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="all-content">
+                    <div class="shared-photos">
+                        <p class="sharing">Shared users</p>
+                        <div class="all-photos">
+                            <img class="photo" src="users-photos/Rectangle%201995%20(1).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201995%20(2).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201995%20(3).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201995(4).png" alt="User">
+                            <div class="number">
+                                <p class="count">+22</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inside-count">
+                        <p class="inside"> Inside Files</p>
+                        <div class="all-users">
+                            <p class="all-users-count-third">2,265</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="size">
-            <p class="mb">242 MB</p>
-        </div>
-        <div class="modified">
-            <p class="modified_date">Dec 12, 2022</p>
-        </div>
-        <div class="three_points">
-            <p class="points_icon"><i class="fa fa-ellipsis-v"></i></p>
-        </div>
-    </div>
 
-    <div class="third_row">
-        <div class="first_part">
-            <div class="third_row_card">
-                <i class="fa-solid fa-video"></i>
-            </div>
-            <div>
-                <p class="first_row_text">UX-UI.zip</p>
-            </div>
-        </div>
-        <div class="second_part">
-            <div class="card_footer">
-                <img class="photo" src="users_photos/Rectangle%202010.png" alt="User">
-                <img class="photo" src="users_photos/Rectangle%202010(2).png" alt="User">
-            </div>
-        </div>
-        <div class="size">
-            <p class="mb">1.8 GB</p>
-        </div>
-        <div class="modified">
-            <p class="modified_date">Dec 12, 2022</p>
-        </div>
-        <div class="three_points">
-            <p class="points_icon"><i class="fa fa-ellipsis-v"></i></p>
-        </div>
-    </div>
+            <div class="card-six">
+                <div class="card-first-header">
+                    <div class="first-card-header-content">
+                        <div class="card-file-minus">
+                            <i class="fa fa-border fa-folder-minus"></i>
+                        </div>
+                        <div class="card-texts">
+                            <h3 class="first-card-text">Files 2022</h3>
+                            <p class="date"> Sep 25, 2022, 13:25 PM</p>
+                        </div>
+                    </div>
+                    <div class="points">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="all-content">
+                    <div class="shared-photos">
+                        <p class="sharing">Shared users</p>
+                        <div class="all-photos">
+                            <img class="photo" src="users-photos/Rectangle%201996%20(1).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201996%20(2).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201996%20(3).png" alt="User">
+                            <img class="photo" src="users-photos/Rectangle%201996(4).png" alt="User">
+                            <div class="number">
+                                <p class="count">+12</p>
+                            </div>
+                        </div>
+                    </div>
 
-</footer>
-</body>
+                    <div class="inside-count">
+                        <p class="inside"> Inside Files</p>
+                        <div class="all-users">
+                            <p class="all-users-count-third">597</p>
+                        </div>
+                    </div>
+                </div>
+
+<!--                <div class="card-first-header">-->
+<!--                    <div class="card-file-minus">-->
+<!--                        <i class="fa fa-border fa-folder-minus"></i>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <h3 class="first-card-text">Files 2022</h3>-->
+<!--                        <p class="date"> Sep 25, 2022, 13:25 PM</p>-->
+<!--                    </div>-->
+<!--                    <div class="points">-->
+<!--                        <i class="fa fa-ellipsis-v"></i>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="users">-->
+<!--                    <p class="sharing">Shared users</p>-->
+<!--                    <div>-->
+<!--                        <p class="inside"> Inside Files</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-footer">-->
+<!--                    <img class="photo" src="users-photos/Rectangle%201996%20(1).png" alt="User">-->
+<!--                    <img class="photo" src="users-photos/Rectangle%201996%20(2).png" alt="User">-->
+<!--                    <img class="photo" src="users-photos/Rectangle%201996%20(3).png" alt="User">-->
+<!--                    <img class="photo" src="users-photos/Rectangle%201996(4).png" alt="User">-->
+<!--                    <div class="number">-->
+<!--                        <p class="count">+12</p>-->
+<!--                    </div>-->
+<!--                    <div class="all-users">-->
+<!--                        <p class="all-users-count">597</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+
+        <!--    Recent files-->
+
+        <div class="recent-file">
+            <h2>Recent Files</h2>
+        </div>
+
+        <!--Page Footer-->
+        <footer class="page-footer">
+            <div class="table-headers">
+                <div class="first-column">
+                    <p class="first-column-text">Name<i class="fa-solid fa-sort"></i></p>
+                </div>
+                <div class="second-column">
+                    <p class="second-column-text">Shared Users<i class="fa-solid fa-sort"></i></p>
+                </div>
+                <div class="third-column">
+                    <p class="column-text">File Size<i class="fa-solid fa-sort"></i></p>
+                </div>
+                <div class="four-column">
+                    <p class="column-text">Last Modified<i class="fa-solid fa-sort"></i></p>
+                </div>
+            </div>
+            <hr>
+            <div class="first-row">
+                <div class="first-part">
+                    <div class="first-row-card">
+                        <img class="picture" src="icons/picture.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="first-row-text">Website Design.png</p>
+                    </div>
+                </div>
+                <div class="second-part">
+                    <div class="card-footer">
+                        <img class="photo" src="users-photos/Rectangle%201997.png" alt="User">
+                        <img class="photo" src="users-photos/Rectangle%201998.png" alt="User">
+                        <img class="photo" src="users-photos/Rectangle%201999.png" alt="User">
+                        <img class="photo" src="users-photos/Rectangle%202000.png" alt="User">
+                        <div class="number">
+                            <p class="count">+12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="size">
+                    <p class="mb">2.8 MB</p>
+                </div>
+                <div class="modified">
+                    <p class="modified-date">Dec 13, 2022</p>
+                </div>
+                <div class="three-points">
+                    <p class="points-icon"><i class="fa fa-ellipsis-v"></i></p>
+                </div>
+            </div>
+
+            <div class="second-row">
+                <div class="first-part">
+                    <div class="second-row-card">
+                        <i class='fa fa-border fa-folder-minus'></i>
+                    </div>
+                    <div>
+                        <p class="first-row-text">UX-UI.zip</p>
+                    </div>
+                </div>
+                <div class="second-part">
+                    <div class="card-footer">
+                        <img class="photo" src="users-photos/Rectangle%202011(1).png" alt="User">
+                        <img class="photo" src="users-photos/Rectangle%202011(2).png" alt="User">
+                        <img class="photo" src="users-photos/Rectangle%202011(3).png" alt="User">
+                        <img class="photo" src="users-photos/Rectangle%202011(4).png" alt="User">
+                        <div class="number">
+                            <p class="count">+5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="size">
+                    <p class="mb">242 MB</p>
+                </div>
+                <div class="modified">
+                    <p class="modified-date">Dec 12, 2022</p>
+                </div>
+                <div class="three-points">
+                    <p class="points-icon"><i class="fa fa-ellipsis-v"></i></p>
+                </div>
+            </div>
+
+            <div class="third-row">
+                <div class="first-part">
+                    <div class="third-row-card">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div>
+                        <p class="first-row-text">UX-UI.zip</p>
+                    </div>
+                </div>
+                <div class="second-part">
+                    <div class="card-footer">
+                        <img class="photo" src="users-photos/Rectangle%202010.png" alt="User">
+                        <img class="photo" src="users-photos/Rectangle%202010(2).png" alt="User">
+                    </div>
+                </div>
+                <div class="size">
+                    <p class="mb">1.8 GB</p>
+                </div>
+                <div class="modified">
+                    <p class="modified-date">Dec 12, 2022</p>
+                </div>
+                <div class="three-points">
+                    <p class="points-icon"><i class="fa fa-ellipsis-v"></i></p>
+                </div>
+            </div>
+
+        </footer>
+    </main>
+
+</div>
+    </body>
 </html>
